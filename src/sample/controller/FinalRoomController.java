@@ -81,7 +81,7 @@ public class FinalRoomController extends UserInterface {
     void GetEnemy(){
 
         int d20 = D(20,1,0);
-        if (d20<19){
+        if (d20<=19){
             foe=new Foe("Wild Orc King","Boss");
             AnimeBossView.setOpacity(0);
 
@@ -94,7 +94,7 @@ public class FinalRoomController extends UserInterface {
         Player player=new Player();
         Combat combat1=new Combat();final String[] CombatText = {"As soon as you entered the last room you have encountered a "
                 + foe.name+"\nPress \"Roll\" button to attack"};
-        //System.out.println("Odaya girdiğin anda bir düşman ile karşılaştın. Ne yapmak istiyorsun?");
+
         CombatActions.setText(CombatText[0]);
         RollButton.setOnAction(new EventHandler<ActionEvent>() {
                                    @Override
@@ -107,9 +107,9 @@ public class FinalRoomController extends UserInterface {
                                            combat1.SpecialAttack="";
                                            SetTexts();
                                        }
-                                       if (player.health<=0){
+                                       if (Player.health <=0){
                                            player.isDead = true;
-                                           CombatText[0] +="\n"+player.name+" has been defeated";
+                                           CombatText[0] +="\n"+ Player.name +" has been defeated"+"\nPress \"Roll\" button to continue";
                                            RollButton.setOnAction(new EventHandler<ActionEvent>() {
                                                @Override
                                                public void handle(ActionEvent event) {
@@ -119,7 +119,7 @@ public class FinalRoomController extends UserInterface {
                                        }
                                        else if (foe.health<=0){
                                            foe.isDead = true;
-                                           CombatText[0] +="\n"+foe.name+" has been defeated";
+                                           CombatText[0] +="\n"+foe.name+" has been defeated"+"\nPress \"Roll\" button to continue";
                                            RollButton.setOnAction(new EventHandler<ActionEvent>() {
                                                @Override
                                                public void handle(ActionEvent event) {

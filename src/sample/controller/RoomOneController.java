@@ -121,7 +121,7 @@ public class RoomOneController extends UserInterface {
                 }
                 if (player.health<=0){
                     player.isDead = true;
-                    CombatText[0] +="\n"+player.name+" has been defeated";
+                    CombatText[0] +="\n"+player.name+" has been defeated"+"\nPress \"Roll\" button to continue";
                     RollButton.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent event) {
@@ -131,7 +131,7 @@ public class RoomOneController extends UserInterface {
                 }
                 else if (foe.health<=0){
                     foe.isDead = true;
-                    CombatText[0] +="\n"+foe.name+" has been defeated";
+                    CombatText[0] +="\n"+foe.name+" has been defeated"+"\nPress \"Roll\" button to continue";
                     RollButton.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent event) {

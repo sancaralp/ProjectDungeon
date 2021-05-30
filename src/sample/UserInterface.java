@@ -4,7 +4,6 @@ import java.util.*;
 public class UserInterface {
 
     Random roll = new Random();
-    Scanner read=new Scanner(System.in);
 
     protected int D(int dice, int count, int mod){
         int x =0;

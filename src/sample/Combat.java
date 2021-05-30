@@ -4,11 +4,12 @@ import sample.UserInterface;
 
 public class Combat extends UserInterface {
     int rogueCrit=0;
+    int rage = 0;
 
     public String d6Dice ="";
     public String d20Dice ="";
     public String SpecialAttack="";
-    int rage = 0;
+
 
 
     public void attack(Player attacker, Foe defender){
@@ -40,8 +41,8 @@ public class Combat extends UserInterface {
             }
             attackAction(attacker,defender,true);
         }
-        else d20Dice=("missed"+"\n");
-        System.out.println(defender.name+"'s new hp is "+defender.health);
+        else {d20Dice=("Missed!"+"\n");d6Dice="";}
+
         if(defender.characterClass.equals("Boss")){defender.health+=mod("arc",defender);
             SpecialAttack=("But "+defender.name+" managed to heal themselves for "+mod("arc",defender)+"points their new hp is "+defender.health);}
     }
@@ -60,7 +61,7 @@ public class Combat extends UserInterface {
             d20Dice=("CRITICAL HIT!");
             attackAction(attacker,defender,true);
         }
-        else System.out.println("missed");
+       else {d20Dice=("Missed!"+"\n");d6Dice="";}
         System.out.println(defender.name+"'s new hp is "+defender.health);
 
         if(defender.characterClass.equals("Mage")){defender.health+=mod(defender.stats[3]);
@@ -72,9 +73,12 @@ public class Combat extends UserInterface {
             defender.stats[2]-=2;
             rage ++;
            // defender.canRage=false;
-            SpecialAttack=(defender.name+"'s veins are becoming visible, and he starts to enlarge! Apparently he is on the RAGE! \n"+defender.name+"'s health is restored for 5 points, strength is increased by 2 points and their dexterity is decreased by 2 points");
+            SpecialAttack=(defender.name+"'s veins are becoming visible, and he starts to enlarge! Apparently he is on the RAGE! \n"+defender.name+"'s health is restored for 5 points, strength is increased by 3 points and their dexterity is decreased by 1 points");
         }
     }
+
+
+
 
     private void attackAction(Player attacker, Foe defender, Boolean crit){
         int d6=D(6,1,mod("str",attacker));

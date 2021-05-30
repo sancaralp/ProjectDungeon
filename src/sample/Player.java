@@ -7,7 +7,6 @@ public class Player extends Entity{
     public static int health;
     public static String characterClass;
     public static String name;
-   // public static boolean canRage=false;
     public static int AC;
 
 
@@ -23,7 +22,6 @@ public class Player extends Entity{
     }
     public Player() {
         super(name, characterClass);
-
     }
 
 
