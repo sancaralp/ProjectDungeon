@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LevelUp2Controller">
+    <children>
+        <ImageView fitHeight="972.0" fitWidth="1728.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Background2.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="BerserkerView" fitHeight="792.0" fitWidth="784.0" layoutX="32.0" layoutY="190.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Warrior(96x96).png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="MageView" fitHeight="726.0" fitWidth="757.0" layoutX="30.0" layoutY="205.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Mage.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="RogueView" fitHeight="695.0" fitWidth="710.0" layoutX="52.0" layoutY="218.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Rogue.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="244.0" layoutY="28.0" prefHeight="62.0" prefWidth="356.0" text="Level Up!" textFill="WHITE">
+            <font>
+                <Font name="Alagard" size="80.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="132.0" prefHeight="112.0" prefWidth="756.0" text="You can increase one of your stats" textFill="WHITE">
+            <font>
+                <Font name="Alagard" size="47.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="914.0" layoutY="164.0" opacity="0.39" prefHeight="636.0" prefWidth="742.0" style="-fx-background-color: #000000;" />
+        <ImageView fitHeight="685.0" fitWidth="587.0" layoutX="914.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/LevelUpdistribute.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1580.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/PlusButton.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="StrLabel" layoutX="1276.0" layoutY="256.0" prefHeight="81.0" prefWidth="375.0" text="3" textFill="WHITE">
+            <font>
+                <Font size="69.0" />
+            </font>
+        </Label>
+        <Label fx:id="ConsLabel" layoutX="1397.0" layoutY="330.0" prefHeight="81.0" prefWidth="249.0" text="3" textFill="WHITE">
+            <font>
+                <Font size="69.0" />
+            </font>
+        </Label>
+        <Label fx:id="DexLabel" layoutX="1292.0" layoutY="411.0" prefHeight="81.0" prefWidth="356.0" text="3" textFill="WHITE">
+            <font>
+                <Font size="69.0" />
+            </font>
+        </Label>
+        <Label fx:id="ArcLabel" layoutX="1197.0" layoutY="484.0" prefHeight="81.0" prefWidth="447.0" text="3" textFill="WHITE">
+            <font>
+                <Font size="69.0" />
+            </font>
+        </Label>
+        <Label fx:id="HealthLabel" layoutX="1063.0" layoutY="613.0" prefHeight="112.0" prefWidth="160.0" text="Imh" textFill="WHITE">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1580.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/PlusButton.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1580.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/PlusButton.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1580.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/PlusButton.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="StrButton" layoutX="1580.0" layoutY="265.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="49.0" text="+">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="DexButton" layoutX="1580.0" layoutY="421.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="49.0" text="+">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="ConsButton" layoutX="1580.0" layoutY="345.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="49.0" text="+">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="ArcButton" layoutX="1580.0" layoutY="499.0" mnemonicParsing="false" opacity="0.0" prefHeight="49.0" prefWidth="49.0" text="+">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="120.0" fitWidth="300.0" layoutX="1365.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/EnterNextRoomButton.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="EnterNextRoom" layoutX="1365.0" layoutY="688.0" mnemonicParsing="false" opacity="0.0" prefHeight="120.0" prefWidth="300.0" text="Button" />
+    </children>
+
+</AnchorPane>

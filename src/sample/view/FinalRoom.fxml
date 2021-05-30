@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="972.0" prefWidth="1728.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.FinalRoomController">
+    <children>
+        <ImageView fitHeight="649.0" fitWidth="802.0" layoutX="836.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Background1.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="RogueView" fitHeight="431.0" fitWidth="423.0" layoutX="1277.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Rogue.png" />
+            </image></ImageView>
+        <ImageView fx:id="BerserkerView" fitHeight="502.0" fitWidth="505.0" layoutX="1219.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Warrior(96x96).png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="MageView" fitHeight="451.0" fitWidth="451.0" layoutX="1263.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Mage.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="619.0" fitWidth="1121.0" layoutX="70.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Background2.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="OrcBossView" fitHeight="636.0" fitWidth="642.0" layoutX="297.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Boss.png" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="972.0" fitWidth="1728.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/Frame.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="CombatActions" alignment="TOP_LEFT" layoutX="88.0" layoutY="665.0" prefHeight="293.0" prefWidth="691.0" text="If you re reading this you should know that you are cute" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="RollButton" layoutX="863.0" layoutY="669.0" mnemonicParsing="false" opacity="0.0" prefHeight="293.0" prefWidth="300.0" text="Button" />
+        <ImageView fitHeight="410.0" fitWidth="400.0" layoutX="1277.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/stats.png" />
+            </image></ImageView>
+        <Label fx:id="NameClassLabel" alignment="TOP_LEFT" layoutX="1396.0" layoutY="564.0" prefHeight="56.0" prefWidth="235.0" text="Bilgin Avenoglu &lt;3" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="ConLabel" layoutX="1396.0" layoutY="686.0" prefHeight="46.0" prefWidth="229.0" text="Str" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label fx:id="HealthText" layoutX="1412.0" layoutY="828.0" prefHeight="89.0" prefWidth="213.0" text="13" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="76.0" />
+            </font>
+        </Label>
+        <Label fx:id="DexLabel" layoutX="1404.0" layoutY="732.0" prefHeight="46.0" prefWidth="229.0" text="Str" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label fx:id="StrLabel" layoutX="1387.0" layoutY="646.0" prefHeight="46.0" prefWidth="229.0" text="Str" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+        <Label fx:id="ArcLabel" layoutX="1396.0" layoutY="767.0" prefHeight="46.0" prefWidth="229.0" text="Str" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="AnimeBossView" fitHeight="559.0" fitWidth="802.0" layoutX="318.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/CuteAnimeGirl.png" />
+         </image>
+      </ImageView>
+    </children>
+
+</AnchorPane>

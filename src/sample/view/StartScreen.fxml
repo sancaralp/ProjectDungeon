@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="972.0" prefWidth="1728.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.StartScreenController">
+   <children>
+      <ImageView fitHeight="972.0" fitWidth="1728.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Background1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="570.0" layoutX="579.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/StartButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="570.0" layoutX="579.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/TutorialButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="661.0" fitWidth="709.0" layoutX="529.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Name.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startGameButton" layoutX="579.0" layoutY="403.0" mnemonicParsing="false" opacity="0.0" prefHeight="190.0" prefWidth="570.0" text="Start Game">
+         <font>
+            <Font name="System Font" size="85.0" />
+         </font>
+      </Button>
+      <Button fx:id="tutorialButton" layoutX="579.0" layoutY="651.0" mnemonicParsing="false" opacity="0.0" prefHeight="190.0" prefWidth="570.0" text="Tutorial">
+         <font>
+            <Font size="85.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

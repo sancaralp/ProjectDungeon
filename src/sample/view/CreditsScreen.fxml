@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="972.0" prefWidth="1728.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CreditsScreenController">
+   <children>
+      <ImageView fitHeight="972.0" fitWidth="1728.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/FinalScene.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="MainMenuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="950.0" prefWidth="1707.0" text="Button" />
+   </children>
+</AnchorPane>
