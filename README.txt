@@ -1,5 +1,4 @@
 This game developed by Ugur Evren Camalan, Sancaralp Elmas, Eren Buldum for an assignment.
-All rights are reserved. You can download for personal use just from our Github accounts. Unauthorized use and distribution is prohibited.
 To play this game you have to implement project to your IDE with JavaFX library.
 
 To contact us (Github):
